@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application form</title>
+    <title> Application  Form</title>
+    <link rel="stylesheet"href ="./style.css">
 </head>
 
 <body>
@@ -12,31 +13,27 @@
         <h1>Job Application Form</h1>
     </header>
     <main>
-        <form style="background-color : #aba0c5" width="10%" height="20%" >
+        <form action="./assets/gifs/thankyou.gif">
             <div>
                 <label for="fname"> First Name:</label>
-                <input type="text" id="fname" name="candiate_fname" required>
+                <input type="text" class ="input" id="fname" name="candiate_fname" required>
             </div>
-            <br>
             <div>
                 <label for="lname"> last Name:</label>
-                <input type="text" id="lname" name="candiate_lname" required>
+                <input type="text"class ="input" id="lname" name="candiate_lname" required>
             </div>
-            <br>
             <div>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="candiate_email" required>
+                <input type="email" class ="input"id="email" name="candiate_email" required>
             </div>
-            <br>
             <div>
                 <label for="phonenumber">Phone Number</label>
-                <input type="tel" id="phonenumber" name="candiate_email" required>
+                <input type="tel"class ="input" id="phonenumber" name="candiate_email" required>
             </div>
-            <br>
             <div>
-                <legend>Gender </legend>
-                <input type="radio" value="male" id="candiate_gender" name="candiate_gender">Male
-                <input type="radio" value="Female" id="candiate_gender" name="candiate_gender">Female
+                <label for="candiate_gender">Gender</label>
+                <input type="radio" class ="input" value="male" id="candiate_gender" name="candiate_gender">Male
+                <input type="radio" class ="input" value="Female" id="candiate_gender" name="candiate_gender">Female
             </div>
             <div>
                 <label for="job">Job Position youre appliying for:</label>
@@ -46,21 +43,18 @@
                     <option value="3">Full stack Developer</option>
                 </select>
             </div>
-            <br>
             <div>
                 <label for="messagetohiringmanager">Message to Hiring Manager</label>
                 <textarea id="messagetohiringmanager" name="messagetohiringmanager" rows="5" cols="30"
                     maxlength="100"></textarea>
             </div>
-            <br>
+            
             <div>
                 <label for="resume">Resume:</label>
                 <input type="file" id="resume" name="resume" accept="application/pdf" required>
             </div>
-            <br>
-            <br>
-            <button type="sumbit" style="background-color:bisque;">Send</button>
-            <button type="reset" style="background-color: blanchedalmond;">Reset</button>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
 
         </form>
 
